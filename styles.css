@@ -1,8 +1,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #090989; /* Dark Blue background */
-    color: white; /* White font */
+    background-color: #090989;
+    color: white;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -18,14 +18,11 @@ body {
 .container h1{
     margin-top: 30px;
 }
-/* Header Section */
 .header {
-    background-color:#090989; /* Blue background for the header */
+    background-color:#090989;
     padding: 20px 0;
     text-align: center;
     background-color: rgb(25, 85, 237);
-    /* top: 0;
-    position: sticky; */
 }
 
 .header h1 {
@@ -37,14 +34,18 @@ body {
 .header nav ul {
     list-style: none;
     padding: 0;
-    /* margin-left: 400px; */
     margin-right: 0px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    flex-direction:row;
     gap: 40px;
     justify-content:flex-end;
 
 }
+@media (max-width: 800px) {
+    .header nav ul {
+      flex-direction: column;
+    }}
 
 .header nav ul li {
     font-size: 1.5rem;
@@ -57,12 +58,10 @@ body {
 }
 
 .header nav ul li a:hover {
-    color:#8aed12;
+    color:rgb(13, 241, 230);
 }
-
-/* Hero Section */
 .hero {
-    background-color:#090989; /* Blue background for hero section */
+    background-color:#090989;
     padding: 40px 0;
     text-align: center;
 }
@@ -76,45 +75,21 @@ body {
     font-size: 1.5rem;
 }
 
-/* About Section */
-/* .about {
-    background-color:#090989; 
-    padding: 60px 0;
-    text-align: center;
-    height: 40vh;
-    width: 95vw;
-} */
-/* .about {
-    padding: 60px 0;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-.about:hover{
-    background-color: white;
-    color:#090989 ;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-} */
-/* About Section */
 .about {
     padding: 10px 0;
     text-align: center;
     height: 50vh;
     width: 80vw;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15px;
     margin: 0 auto; 
     margin-top: 20px;
-    /* Center the section */
 }
 
 .about:hover {
-    background-color: white; /* Dark blue background on hover */
-    color: #090989; /* White text on hover */
-    transform: scale(1.03); /* Slightly increase size on hover */
+    background-color: white;
+    color: #090989;
+    transform: scale(1.03);
 }
 
 .about h2 {
@@ -122,7 +97,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Projects Section */
 .projects {
     background-color: #090989; 
     padding: 30px 0;
@@ -148,24 +122,25 @@ body {
 }
 
 .project-box {
-    background-color:#090989; 
+    background-color:#2ac6f1; 
     color:white; 
     padding: 20px;
     width: 300px;
+    margin-left: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid white;
 }
 
 .project-box:hover {
-    transform: scale(1.1); /* Increased scale on hover */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
     background-color: white;
     color: blue;
 }
 
-/* Contact Section */
 .contact {
-    background-color: #090989; /* Blue background for contact section */
+    background-color: #090989; 
     padding: 60px 0;
     text-align: center;
 }
@@ -193,8 +168,8 @@ body {
 }
 
 .contact button {
-    background-color: white; /* White background for button */
-    color: #03045e; /* Dark blue text for button */
+    background-color: white;
+    color: #03045e;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -203,13 +178,12 @@ body {
 }
 
 .contact button:hover {
-    background-color: #090989; /* Lighter blue on hover */
-    color: white; /* White text on hover */
+    background-color: #090989;
+    color: white; 
 }
 
-/* Footer Section */
 .footer {
-    background-color: #090989; /* Dark blue background */
+    background-color: #090989;
     padding: 20px 0;
     text-align: center;
 }
@@ -218,11 +192,10 @@ body {
     top:400px;
     left:1050px;
 }
-/* Blinking Cursor */
 .blinking-cursor {
     font-weight:normal;
-    font-size: 2rem; /* Increased the font size to double */
-    line-height: 1;  /* Ensures the cursor stays aligned with the text */
+    font-size: 2rem;
+    line-height: 1;  
     color: white;
     animation: blink 0.8s infinite;
 }
@@ -233,31 +206,28 @@ body {
     100% { opacity: 1; }
 }
 
-/* Social Links */
 .social-links {
     text-align: center;
-    /* margin-bottom: 20px; */
-    /* margin-top: 20px; */
 }
 
 .social-icon {
-    width: 40px; /* Adjust the size as needed */
+    width: 40px;
     height: 40px;
     margin: 0 15px;
     transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Slightly increase the size on hover */
+    transform: scale(1.2);
 }  
 .contact button {
-    background-color: #00b4d8; /* Light blue background for button */
+    background-color: #00b4d8;
     color: white;
-    padding: 12px 25px; /* Adjusted padding for a better look */
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
-    font-weight: 600; /* Bolder font for button */
-    margin-left: calc(50% - 60px); /* Center the button */
+    font-weight: 600;
+    margin-left: calc(50% - 60px);
 }
