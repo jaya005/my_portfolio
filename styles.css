@@ -37,12 +37,11 @@ body {
 .header nav ul {
     list-style: none;
     padding: 0;
-    margin-left: 400px;
+    /* margin-left: 400px; */
     margin-right: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    gap: 40px;
     justify-content:flex-end;
 
 }
@@ -58,7 +57,7 @@ body {
 }
 
 .header nav ul li a:hover {
-    color:#090989;
+    color:#8aed12;
 }
 
 /* Hero Section */
@@ -78,10 +77,44 @@ body {
 }
 
 /* About Section */
-.about {
+/* .about {
     background-color:#090989; 
     padding: 60px 0;
     text-align: center;
+    height: 40vh;
+    width: 95vw;
+} */
+/* .about {
+    padding: 60px 0;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.about:hover{
+    background-color: white;
+    color:#090989 ;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+} */
+/* About Section */
+.about {
+    padding: 10px 0;
+    text-align: center;
+    height: 50vh;
+    width: 80vw;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border-radius: 15px; /* Rounded corners */
+    margin: 0 auto; 
+    margin-top: 20px;
+    /* Center the section */
+}
+
+.about:hover {
+    background-color: white; /* Dark blue background on hover */
+    color: #090989; /* White text on hover */
+    transform: scale(1.03); /* Slightly increase size on hover */
 }
 
 .about h2 {
@@ -217,3 +250,14 @@ body {
 .social-icon:hover {
     transform: scale(1.2); /* Slightly increase the size on hover */
 }  
+.contact button {
+    background-color: #00b4d8; /* Light blue background for button */
+    color: white;
+    padding: 12px 25px; /* Adjusted padding for a better look */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600; /* Bolder font for button */
+    margin-left: calc(50% - 60px); /* Center the button */
+}
