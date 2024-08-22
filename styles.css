@@ -1,0 +1,219 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #090989; /* Dark Blue background */
+    color: white; /* White font */
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    margin-top: 30px;
+}
+/* Header Section */
+.header {
+    background-color:#090989; /* Blue background for the header */
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(25, 85, 237);
+    /* top: 0;
+    position: sticky; */
+}
+
+.header h1 {
+    margin-left:-1190px;
+    margin-top: -10px;
+    font-size: 1.8rem;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 400px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    justify-content:flex-end;
+
+}
+
+.header nav ul li {
+    font-size: 1.5rem;
+}
+
+.header nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav ul li a:hover {
+    color:#090989;
+}
+
+/* Hero Section */
+.hero {
+    background-color:#090989; /* Blue background for hero section */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    background-color:#090989; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #090989; 
+    padding: 30px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.aboutme{
+    font-size: 1.5rem;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.project-grid {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    background-color:#090989; 
+    color:white; 
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.1); /* Increased scale on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    background-color: white;
+    color: blue;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #090989; /* Blue background for contact section */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #090989; 
+    border-radius: 5px;
+    background-color: white; 
+    color: #cfcfd8; 
+}
+
+.contact button {
+    background-color: white; /* White background for button */
+    color: #03045e; /* Dark blue text for button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 260px;
+}
+
+.contact button:hover {
+    background-color: #090989; /* Lighter blue on hover */
+    color: white; /* White text on hover */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #090989; /* Dark blue background */
+    padding: 20px 0;
+    text-align: center;
+}
+.img{
+    position: absolute;
+    top:400px;
+    left:1050px;
+}
+/* Blinking Cursor */
+.blinking-cursor {
+    font-weight:normal;
+    font-size: 2rem; /* Increased the font size to double */
+    line-height: 1;  /* Ensures the cursor stays aligned with the text */
+    color: white;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly increase the size on hover */
+}  
