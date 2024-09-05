@@ -78,7 +78,7 @@ body {
 .about {
     padding: 10px 0;
     text-align: center;
-    height: 50vh;
+    height: 57vh;
     width: 80vw;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
     border-radius: 15px;
